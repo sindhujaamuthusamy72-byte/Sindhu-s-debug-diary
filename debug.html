@@ -1,0 +1,98 @@
+<style>
+    body
+    {
+        font-family : Arial,sans-serif;
+        background-color : #5891b5; 
+        margin : 0;
+        padding: 20px;
+    }
+
+    h1{
+        text-align: center;
+        color: #1b0b0b
+    }
+
+    p.subtitle
+    {
+        text-align: center;
+        color: #666
+    }
+
+    .container
+    {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .entry
+    {
+        background: white;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    button
+    {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        border: none; 
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover
+    {
+        background-color: #68956b;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Debug diary</title>
+    <link rel="icon" type="image/png" href ="image/image.png">
+</head>
+
+<h1 style="color:#d9db5dd4; font-family: 'Great vibe',cursive;"> <img src="image/icon.jpg" width="60" height="50"style="vertical-aling:middle:margin-right:10px;"> SINDHU'S DEBUG DIARY </h1>
+<p class="subtitle" style=color:#dbeafe> Tracking my coding mistakes & lessons </p>
+
+<div class="container" id="diary">
+
+    <div class="entry">
+        <p><b>Problem : </b> Next greater node in linked list</p>
+        <p><b>Mistake: </b> Used brute force approach -> inefficient</p>
+        <p><b>Learning:</b> Stack is powerful for "next greater" problems and improves time complexity</p>
+    </div>
+
+</div>
+
+<button onclick="addEntry()">+Add New Entry</button>
+
+<script>
+    function addEntry()
+    {
+        let problem=prompt("Enter Problem name:");
+        let mistake=prompt("What mistake did you make?");
+        let learning=prompt("What did you learn?");
+
+        if(problem && mistake && learning)
+    {
+        let newEntry = document.createElement("div");
+        newEntry.classList.add("entry");
+        newEntry.innerHTML = `
+             <p><b>Problem:</b> ${problem}</p>
+             <p><b>Mistake:</b> ${mistake}</p>
+             <p><b>Learning:</b> ${learning}</p>
+             `;
+        document.getElementById("diary").appendChild(newEntry);
+    }
+    else
+    {
+        alert("Please fill all fields!!");
+    }
+    }
+</script>
