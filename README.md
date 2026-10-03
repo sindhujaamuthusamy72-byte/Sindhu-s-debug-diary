@@ -1,4 +1,4 @@
-# 🐞 Sindhu's Debug Diary
+#  Sindhu's Debug Diary
 
 A simple, self-contained web app to log coding mistakes, the approach that went
 wrong, and the lesson learned from each one — built as a personal DSA/coding
@@ -8,7 +8,7 @@ journal to track growth over time.
 ![Made with CSS](https://img.shields.io/badge/CSS-3-blue)
 ![Made with JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-yellow)
 
-## 📖 About
+## About
 
 Every developer makes the same kind of mistake more than once — until they
 write it down. This project is a lightweight "diary" where each entry captures:
@@ -20,14 +20,14 @@ write it down. This project is a lightweight "diary" where each entry captures:
 New entries can be added directly from the browser with a click — no backend,
 no database, just plain JavaScript DOM manipulation.
 
-## ✨ Features
+##  Features
 
-- 📝 Add new debug entries on the fly via a prompt-based form
-- 🎨 Clean, card-style UI with soft shadows and rounded corners
-- ⚡ Zero dependencies — pure HTML, CSS, and JavaScript
-- 📱 Simple, readable layout that works on any screen size
+-  Add new debug entries on the fly via a prompt-based form
+-  Clean, card-style UI with soft shadows and rounded corners
+-  Zero dependencies — pure HTML, CSS, and JavaScript
+-  Simple, readable layout that works on any screen size
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Tool |
 |-------|------|
@@ -35,7 +35,7 @@ no database, just plain JavaScript DOM manipulation.
 | Styling | CSS3 (embedded) |
 | Interactivity | Vanilla JavaScript (DOM manipulation) |
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 debug-diary/
@@ -45,7 +45,7 @@ debug-diary/
 └── README.md
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 No installation or build step required.
 
@@ -58,13 +58,13 @@ No installation or build step required.
    [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
    extension in VS Code for auto-reload while editing.
 
-## 🖱️ Usage
+##  Usage
 
 1. Click **"+ Add New Entry"**
 2. Enter the problem name, your mistake, and what you learned when prompted
 3. Your entry appears instantly as a new card in the diary
 
-## 🔭 Future Improvements
+## Future Improvements
 
 - [ ] Replace `prompt()` popups with a proper inline form
 - [ ] Save entries to `localStorage` so they persist after refresh
@@ -72,11 +72,11 @@ No installation or build step required.
 - [ ] Add a delete/edit option for existing entries
 - [ ] Dark mode toggle
 
-## 🙋 Author
+##  Author
 
 **Sindhu**
 First-year student, documenting the coding journey — one bug at a time.
 
-## 📄 License
+##  License
 
 This project is open source and free to use for learning purposes.
